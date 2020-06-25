@@ -1,13 +1,10 @@
     .mainbox {
-        display: flex;
-        padding: 2em;
-        height: 90vh;
-        justify-content: center;
-        align-items: middle;
+        padding: 32px;
     }
     
     #clock {
         width: 100%;
+        position: relative;
     }
     
     .circum {
@@ -15,6 +12,7 @@
         stroke: #000;
         stroke-width: 9;
         stroke-miterlimit: 10;
+        border: 5px solid green;
     }
     
     .center {
@@ -51,6 +49,21 @@
     
     .sizing-box {
         fill: none;
+    }
+    
+    #num-clock {
+        position: absolute;
+        top: 325px;
+        left: 670px;
+        width: 90px;
+        z-index: -1;
+        background: #2f3061;
+        padding: 3px;
+        color: #f7fff7;
+        text-decoration: none;
+        text-align: center;
+        font-size: 22px;
+        border-radius: 4px;
     }
     
     #hour,
